@@ -1,0 +1,172 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; 
+  width: 100%;
+  height: 100%;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #2e2e2e; 
+  color: white; 
+  
+}
+
+.sidebar {
+  
+  width: 70px;
+  background-color: #1e1e1e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 90px;
+  position: fixed;
+  height: 100%;
+  z-index: 1000;
+ 
+}
+
+.icon {
+  width: 60px;
+  margin: 15px 0;
+}
+
+.content-wrapper {
+  display: flex;
+  margin-left: 60px; 
+  width: calc(100% - 60px);
+  height: calc(100% - 40px); 
+ 
+}
+
+.table-container {
+  width: 33.33%; 
+  padding: 20px;
+ 
+  background-color: #3e3e3e;
+}
+
+table {
+  
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #4e4e4e; 
+  height: 35rem;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+.status-section {
+  width: 33.33%; 
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  background-color: #3e3e3e; 
+}
+
+.logos {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  
+}
+
+.logo {
+  margin-top: -1rem;
+  max-width: 140px;
+  height: auto;
+  
+}
+
+.status-item {
+  margin: 10px 0;
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.status-item label {
+  width: 50%;
+  text-align: left;
+}
+
+.status-item input {
+  width: 50%;
+  text-align: right;
+  background-color: #4e4e4e; 
+  color: white; 
+  border: none;
+  padding: 5px;
+}
+
+.background-section {
+  width: 33.33%; 
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 20px;
+  overflow-y: auto;
+  background-color: black; 
+}
+
+.signal-bar-logo {
+  width: 60px;
+  height: auto;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #1e1e1e;
+  padding: 10px 0;
+  color: white;
+  position: fixed;
+  bottom: 0;
+}
+
+.background-section .footer-logo {
+  position: absolute;
+  bottom: 5%; 
+  left: 72%;
+  transform: translateX(-50%);
+  width: 75px; 
+  height: 70px; 
+  margin: 10px;
+  cursor: pointer; 
+  transition: transform 0.2s; 
+}
+
+.background-section .footer-logo:hover {
+  transform: scale(1.1); 
+}
+
+.subscription-message {
+  text-align: center;
+  margin-top: 2px;
+  color: #fff;
+  font-size: 15px;
+  -webkit-text-fill-color:red;
+  background-color: #2b2b2b;
+  padding: 0px ;
+  border-radius: 4px;
+}
+.processing-completed {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+  color: white;
+}
